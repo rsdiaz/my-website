@@ -2,9 +2,10 @@ import { Fragment } from 'react'
 import styled from "@emotion/styled"
 import { getAllFilesMetaData } from '../lib/mdx'
 import { elements as UI,
-  Hero,
   OpenGraph,
   Header,
+  Hero,
+  Container,
 } from '@/components'
 
 export default function Home({ posts }) {
@@ -12,8 +13,19 @@ export default function Home({ posts }) {
     <Fragment>
       <OpenGraph />
       <UI.Box>
-        <Header />
-        <Hero />
+        <UI.Box marginX='8.5'>
+          <UI.Container maxW='container.xl'>
+            <UI.Flex
+              direction='column'
+              align='center'
+              h='100vh'
+              justify='space-evenly'
+            >
+              <Header />
+              <Hero />
+            </UI.Flex>
+          </UI.Container>
+        </UI.Box>
       </UI.Box>
     </Fragment>
   )

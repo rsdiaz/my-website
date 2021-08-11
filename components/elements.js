@@ -3,5 +3,9 @@ export {
   Box,
   Flex,
   Heading,
-  HStack
+  HStack,
+  Container,
+  Image,
+  Center,
+  Button,
 } from "@chakra-ui/react"
