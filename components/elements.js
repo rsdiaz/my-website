@@ -8,4 +8,5 @@ export {
   Image,
   Center,
   Button,
+  Grid,
 } from "@chakra-ui/react"

@@ -58,7 +58,7 @@ export const Hero = () => {
       <Image
         boxSize={[100, 150]}
         objectFit='cover'
-        my='30'
+        my={['0', '0', '0', '30']}
         src='https://res.cloudinary.com/rserrano/image/upload/v1628638945/blog/avataaars_xu13gj.png'
         alt='Roberto Serrano - Desarrollador Web'
       />
@@ -71,15 +71,15 @@ export const Hero = () => {
       </Text>
       <br />
       <br />
-      <Box w='xl' my='5'>
-        <Text>
+      <Box w={['xs', 'sm', 'lg', 'xl']} my={['0', '30']} px='6'>
+        <Text fontSize={['sm', 'lg']}>
           Apasionado de las tecnologías web, el desarrollo y la seguridad informática. 
           Entusiasta de HTML, CSS, JavaScript, Node, Vue, etc... Comparto mi aprendizaje y 
           conocimiento a traves de mi blog, en el cual publico artículos sobre desarrollo web 
           y mi día a día tecnológico.
         </Text>
       </Box>
-      <StyledButton colorMode={colorMode}>About</StyledButton>
+      <StyledButton mode={colorMode}>About</StyledButton>
     </Fragment>
   )
 }

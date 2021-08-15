@@ -8,30 +8,32 @@ const NavLinkItem = styled.a`
   font-family: var(--chakra-fonts-heading);
   padding: var(--chakra-space-1) var(--chakra-space-4);
   margin: 0 auto;
-  border: ${props => 
+  border: 3px solid var(--chakra-colors-gray-700);
+  background: ${props =>
     props.colorMode === 'dark'
-    ? '2px solid var(--chakra-colors-gray-800)'
-    : '2px solid var(--chakra-colors-white)'
+    ? 'var(--chakra-colors-yellow-300);'
+    : 'var(--chakra-colors-white);'
   };
-  box-shadow: none;
+  color: var(--chakra-colors-gray-700);
+  box-shadow: -3px 5px var(--chakra-colors-gray-700);
   transition: background var(--chakra-transition-duration-slow)
   var(--chakra-transition-easing-ease-in);
+  font-size: 12px;
 
   &:hover {
-    background: var(--chakra-colors-yellow-300);
-    color: ${props =>
-      props.colorMode === 'dark' ? 'var(--chakra-colors-gray-700)' : ''
-    };
-    border: ${props =>
+    background: ${props => 
       props.colorMode === 'dark'
-        ? '2px solid var(--chakra-colors-gray-800)'
-        : '2px solid var(--chakra-colors-gray-800)'
+      ? 'var(--chakra-colors-whiteAlpha-300);'
+      : 'var(--chakra-colors-yellow-300);'
+    }; 
+    color: ${props =>
+      props.colorMode === 'dark' ? 'var(--chakra-colors-white)' : ''
     };
+    border: 3px solid var(--chakra-colors-gray-700);
     box-shadow: -3px 5px var(--chakra-colors-gray-700);
   }
 
   @media screen and (min-width: 700px) {
-    font-size: var(--chakra-fontSizes-sm);
     margin: 0 var(--chakra-space-4);
   }
 
