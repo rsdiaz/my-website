@@ -7,17 +7,16 @@ import { useColorMode } from '@chakra-ui/color-mode';
 const TitleLink = styled.a`
   font-size: 1.5rem;
   font-weight: 500;
-  background: ${props =>
-    props.colorMode === 'dark' ? 'var(--chakra-colors-yellow-300)' : 'var(--chakra-colors-white)'};
   color: ${props =>
-    props.colorMode === 'dark' ? 'var(--chakra-colors-gray-700)' : 'var(--chakra-colors-gray-700)'};
+    props.colorMode === 'dark' ? 'var(--chakra-colors-white)' : 'var(--chakra-colors-white)'};
+  background: var(--chakra-colors-primary);
   text-decoration: none;
-  padding: 0px var(--chakra-space-3) 0px var(--chakra-space-3);
+  padding: 2px var(--chakra-space-3) 2px var(--chakra-space-3);
   transition: background var(--chakra-transition-duration-slow)
     var(--chakra-transition-easing-ease-in);
   
   &:hover {
-    background: var(--chakra-colors-gray-700);
+    background: var(--chakra-colors-secondary);
     color: var(--chakra-colors-white);
   }
 `
