@@ -14,8 +14,10 @@ const theme = extendTheme({
     })
   },
   fonts: {
-    heading: "IBM Plex Mono",
+    heading: "Raleway",
+    body: "PT Sans Narrow",
   },
+  
 })
 
 export { ChakraProvider as ThemeProvider }

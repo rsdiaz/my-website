@@ -22,7 +22,7 @@ const IconStyle = styled.a`
 export const Header = () => {
 
   return (
-    <Box as='header' px={[0, 0, 0, 8]} w='100%'>
+    <Box as='header' p={[2, 0, 0, 4]} w='100%'>
       <Flex
         fontWeight='bold'
         direction={["column", "column", "column", "row"]}
