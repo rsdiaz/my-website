@@ -17,7 +17,10 @@ const theme = extendTheme({
     heading: "Raleway",
     body: "PT Sans Narrow",
   },
-  
+  colors: {
+    primary: "#45B3AF",
+    secondary: "#196966"
+  }
 })
 
 export { ChakraProvider as ThemeProvider }
