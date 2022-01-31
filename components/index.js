@@ -1,4 +1,4 @@
-export { Header } from './Header'
+export { Header } from './Header/Header'
 export { OpenGraph } from './OpenGraph'
 export { Hero } from './Hero'
 export { Logo } from './Logo'
